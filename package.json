@@ -1,0 +1,14 @@
+{
+  "name": "brandonrowe-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio Page for Brandon Rowe",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brandon Rowe",
+  "license": "ISC",
+  "dependencies": {
+    "bulma": "^0.7.5"
+  }
+}
