@@ -3,8 +3,8 @@ body {
   background-attachment: fixed;
   margin: 0em;
   padding: 0em;
-  background: linear-gradient(-45deg, #ee76527a, #a70e168e, #23a5d57e, #21cf8781);
-  background-size: 200% 200%;
+  background: linear-gradient(-45deg, #ec52237a, #184cda8e, #23a5d57e, #21cf8781);
+  background-size: 200% 100%;
   -webkit-animation: Gradient 10s ease infinite;
   -moz-animation: Gradient 10s ease infinite;
   animation: Gradient 10s ease infinite;
@@ -46,6 +46,14 @@ body {
   }
 }
 
+#simmer-title {
+  font-family: "Aclonica", sans-serif;
+}
+
+#bloom-title {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
 .navbar {
   background-color: #000000;
   padding: 0 3em;
@@ -58,6 +66,7 @@ body {
 .image {
   border-style: solid;
   border-color: rgb(223, 223, 223);
+  box-shadow: 5px 5px 10px #4e4e4e;
 }
 
 .embedly-card {
@@ -79,6 +88,8 @@ body {
   width: 100%;
   position: absolute;
 }
+
+
 
 @media screen and (max-width: 769px) {
   #headshot {
