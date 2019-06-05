@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./index.js"></script>
+    <title>Brandon Rowe</title>
+  </head>
+  <body>
+    <nav
+      class="navbar is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#home">
+          <strong>HOME</strong>
+        </a>
+
+        <a
+          role="button"
+          class="navbar-burger burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="#about">
+            About
+          </a>
+
+          <a class="navbar-item" href="#projects">
+            Projects
+          </a>
+
+          <a class="navbar-item">
+            Experience
+          </a>
+
+          <a class="navbar-item">
+            Contact
+          </a>
+        </div>
+      </div>
+    </nav>
+    <section id="home" class="hero is-info is-bold is-fullheight">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title is-1">BRANDON ROWE</h1>
+          <h2 class="subtitle is-3">Fullstack Software Engineer</h2>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="hero is-info is-bold is-fullheight">
+      <div class="hero-upper">
+        <br />
+        <br />
+        <br />
+        <div class="container has-text-centered">
+          <h1 class="title is-1">About Me</h1>
+        </div>
+      </div>
+      <div class="hero-body">
+        <div class="columns is-centered">
+          <div class="column is-one-third is-full-mobile">
+            <figure class="image">
+              <img id="headshot" src="./Rowe_Headshot_Cropped.jpeg" alt="Brandon Rowe"/>
+            </figure>
+          </div>
+          <div class="column is-one-third has-text-centered">
+            <div class="is-size-4-desktop is-size-5-tablet is-size-4-mobile">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="hero is-info is-bold is-fullheight">
+      <div class="hero-upper">
+        <br />
+        <br />
+        <br />
+        <div class="container has-text-centered">
+          <h1 class="title is-1">Projects</h1>
+        </div>
+      </div>
+      <div class="hero-body">
+        <div id="bloom" class="columns is-centered">
+          <div class="column is-one-third has-text-centered">
+            <h1 class="is-size-1">BLOOM WRITING</h1>
+            <p class="buttons is-centered">
+              <a class="button is-danger" href="https://bloom-writing.herokuapp.com/">
+                <span>Deployed Link</span>
+              </a>
+              <a
+                class="button is-danger"
+                href="https://github.com/brandonhrowe/bloom-writing"
+              >
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>GitHub</span>
+              </a>
+            </p>
+            <div class="is-size-4">Sole developer</div>
+          </div>
+          <div class="column is-one-third">
+            <figure class="image">
+              <img id="bloom-screenshot" src="./Bloom_Screenshot.png" alt="Bloom Screenshot"/>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
