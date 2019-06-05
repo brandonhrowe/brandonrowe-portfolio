@@ -1,17 +1,57 @@
 body {
-  font-family: 'Crimson Text', serif;
-  background: linear-gradient(45deg, #26acebd5, #d47a25da);
+  font-family: "Crimson Text", serif;
   background-attachment: fixed;
   margin: 0em;
   padding: 0em;
+  background: linear-gradient(-45deg, #ee76527a, #a70e168e, #23a5d57e, #21cf8781);
+  background-size: 200% 200%;
+  -webkit-animation: Gradient 10s ease infinite;
+  -moz-animation: Gradient 10s ease infinite;
+  animation: Gradient 10s ease infinite;
 }
 
-.navbar{
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.navbar {
   background-color: #000000;
   padding: 0 3em;
 }
 
-.page{
+.page {
   margin: 0 3em;
 }
 
@@ -26,23 +66,23 @@ body {
   border-radius: 5px;
 }
 
-.video-responsive{
-  overflow:hidden;
-  padding-bottom:56.25%;
-  position:relative;
-  height:0;
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
 }
-.video-responsive iframe{
-  left:0;
-  top:0;
-  height:100%;
-  width:100%;
-  position:absolute;
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
-@media screen and (max-width: 769px){
-  #headshot{
-    content: url("/public/Rowe_Headshot.jpg")
+@media screen and (max-width: 769px) {
+  #headshot {
+    content: url("/public/Rowe_Headshot.jpg");
   }
   .embedly-card {
     height: 25em;
