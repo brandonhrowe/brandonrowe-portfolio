@@ -88,12 +88,16 @@ body {
   position: absolute;
 }
 #contact {
-  z-index: 1000000000;
+  z-index: 11;
 }
 
 .gears-left{
   margin-left: -160px;
-  margin-top: -50px;
+  margin-top: -40px;
+}
+.gears-right{
+  margin-right: 215px;
+  margin-top: -40px;
 }
 
 .gears img{
@@ -104,6 +108,9 @@ body {
 }
 
 .gear-left.counterclockwise{
+  margin-left: 55px;
+}
+.gear-right.counterclockwise{
   margin-left: 55px;
 }
 
@@ -131,7 +138,6 @@ body {
 .gear-9{
   margin-top: 640px;
 }
-
 
 
 @media screen and (max-width: 769px) {
