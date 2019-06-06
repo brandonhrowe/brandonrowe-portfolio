@@ -4,7 +4,7 @@ body {
   margin: 0em;
   padding: 0em;
   background: linear-gradient(-45deg, #ec52237a, #184cda8e, #23a5d57e, #21cf8781);
-  background-size: 200% 100%;
+  background-size: 200% 200%;
   -webkit-animation: Gradient 10s ease infinite;
   -moz-animation: Gradient 10s ease infinite;
   animation: Gradient 10s ease infinite;
@@ -86,6 +86,50 @@ body {
   height: 100%;
   width: 100%;
   position: absolute;
+}
+#contact {
+  z-index: 1000000000;
+}
+
+.gears-left{
+  margin-left: -160px;
+  margin-top: -50px;
+}
+
+.gears img{
+  position: fixed;
+  height: 15em;
+  z-index: 10;
+  opacity: 0.75;
+}
+
+.gear-left.counterclockwise{
+  margin-left: 55px;
+}
+
+.gear-2{
+  margin-top: 80px;
+}
+.gear-3{
+  margin-top: 160px;
+}
+.gear-4{
+  margin-top: 240px;
+}
+.gear-5{
+  margin-top: 320px;
+}
+.gear-6{
+  margin-top: 400px;
+}
+.gear-7{
+  margin-top: 480px;
+}
+.gear-8{
+  margin-top: 560px;
+}
+.gear-9{
+  margin-top: 640px;
 }
 
 
