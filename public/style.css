@@ -1,9 +1,18 @@
 body {
-  font-family: "Crimson Text", serif;
+  /* font-family: "Crimson Text", serif; */
+  font-family: "Poiret One", serif;
+  text-shadow: -0.25px 0 #555555, 0 0.25px #555555, 0.25px 0 #555555,
+    0 -0.25px #555555;
   background-attachment: fixed;
   margin: 0em;
   padding: 0em;
-  background: linear-gradient(-45deg, #ec52237a, #184cda8e, #23a5d57e, #21cf8781);
+  background: linear-gradient(
+    -45deg,
+    #ec52237a,
+    #184cda8e,
+    #23a5d57e,
+    #21cf8781
+  );
   background-size: 200% 200%;
   -webkit-animation: Gradient 10s ease infinite;
   -moz-animation: Gradient 10s ease infinite;
@@ -48,10 +57,17 @@ body {
 
 #simmer-title {
   font-family: "Aclonica", sans-serif;
+  text-shadow: none;
 }
 
 #bloom-title {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+  text-shadow: none;
+}
+
+span {
+  text-shadow: -0.1px 0 #ffffff, 0 0.1px #ffffff, 0.1px 0 #ffffff,
+    0 -0.1px #ffffff;
 }
 
 .navbar {
@@ -91,54 +107,53 @@ body {
   z-index: 11;
 }
 
-.gears-left{
+.gears-left {
   margin-left: -160px;
   margin-top: -40px;
 }
-.gears-right{
+.gears-right {
   margin-right: 215px;
   margin-top: -40px;
 }
 
-.gears img{
+.gears img {
   position: fixed;
   height: 15em;
   z-index: 10;
   opacity: 0.75;
 }
 
-.gear-left.counterclockwise{
+.gear-left.counterclockwise {
   margin-left: 55px;
 }
-.gear-right.counterclockwise{
+.gear-right.counterclockwise {
   margin-left: 55px;
 }
 
-.gear-2{
+.gear-2 {
   margin-top: 80px;
 }
-.gear-3{
+.gear-3 {
   margin-top: 160px;
 }
-.gear-4{
+.gear-4 {
   margin-top: 240px;
 }
-.gear-5{
+.gear-5 {
   margin-top: 320px;
 }
-.gear-6{
+.gear-6 {
   margin-top: 400px;
 }
-.gear-7{
+.gear-7 {
   margin-top: 480px;
 }
-.gear-8{
+.gear-8 {
   margin-top: 560px;
 }
-.gear-9{
+.gear-9 {
   margin-top: 640px;
 }
-
 
 @media screen and (max-width: 769px) {
   #headshot {
