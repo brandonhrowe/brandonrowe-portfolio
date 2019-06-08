@@ -155,11 +155,47 @@ span {
   margin-top: 640px;
 }
 
+#gear-toggle {
+  position: fixed;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  bottom: 0;
+  right: 0;
+  padding: 0.5em;
+  width: 30vw;
+  border-style: solid;
+  background-color: darkorange;
+  z-index: 12;
+  opacity: 0.75;
+  animation-name: fade-in;
+  animation-duration: 1s;
+  -webkit-animation-name: fade-in;
+  -webkit-animation-duration: 1s;
+}
+
+@keyframes fade-in {
+  from {opacity: 0;}
+  to {opacity: 0.75;}
+}
+
+@-webkit-keyframes fade-in {
+  from {opacity: 0;}
+  to {opacity: 0.75;}
+}
+
 @media screen and (max-width: 769px) {
   #headshot {
     content: url("/public/Rowe_Headshot.jpg");
   }
   .embedly-card {
     height: 25em;
+  }
+  .gears {
+    display: none;
+    position: fixed;
+    visibility: hidden;
+  }
+  #gear-toggle {
+    display: none;
   }
 }
