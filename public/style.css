@@ -103,8 +103,8 @@ span {
   width: 100%;
   position: absolute;
 }
-#contact {
-  z-index: 11;
+#contact div{
+  z-index: 13;
 }
 
 .gears-left {
@@ -164,6 +164,7 @@ span {
   padding: 0.5em;
   width: 30vw;
   border-style: solid;
+  border-radius: 10px;
   background-color: darkorange;
   z-index: 12;
   opacity: 0.75;

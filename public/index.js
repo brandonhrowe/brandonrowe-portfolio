@@ -32,12 +32,12 @@ gearButton.addEventListener("click", () => {
     allGears.forEach(gears => {
       gears.setAttribute('style', 'display: none')
     })
-    gearButton.innerHTML = "Want To See The Gears Running This Site? <strong>Click</strong> Here!"
+    gearButton.innerHTML = "<strong>Want To See The Gears Running This Site? Click Here!</strong>"
   } else {
     allGears.forEach(gears => {
       gears.setAttribute('style', 'display: block')
     })
-    gearButton.innerHTML = "Having Issues With This Page? <strong>Click</strong> to Turn Gears Off"
+    gearButton.innerHTML = "<strong>Having Issues With This Page? Click to Turn Gears Off</strong>"
 
   }
 });
