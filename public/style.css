@@ -70,6 +70,17 @@ span {
     0 -0.1px #ffffff;
 }
 
+.stack {
+  background-image: linear-gradient(45deg, #ff8c00, #e78b4d);
+  border-style: solid;
+  color: #000000;
+  padding: 0 0 5px 0;
+}
+
+.stack > * {
+  margin: 0;
+}
+
 .navbar {
   padding: 0 3em;
 }
@@ -80,7 +91,7 @@ span {
 
 .image {
   border-style: solid;
-  border-color: rgb(223, 223, 223);
+  border-color: #dfdfdf;
   box-shadow: 5px 5px 10px #4e4e4e;
 }
 
@@ -105,6 +116,10 @@ span {
 }
 #contact div{
   z-index: 13;
+}
+
+.contact-links a:hover {
+  color: #ffffff;
 }
 
 .gears-left {
@@ -165,13 +180,19 @@ span {
   width: 30vw;
   border-style: solid;
   border-radius: 10px;
-  background-color: darkorange;
-  z-index: 12;
+  background-color: #ff8c00;
+  color: #000000;
+  z-index: 100;
   opacity: 0.75;
   animation-name: fade-in;
   animation-duration: 1s;
   -webkit-animation-name: fade-in;
   -webkit-animation-duration: 1s;
+}
+
+#gear-toggle:hover {
+  color: #060486;
+  opacity: 1;
 }
 
 @keyframes fade-in {
