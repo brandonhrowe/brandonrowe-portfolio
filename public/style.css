@@ -113,6 +113,19 @@ span {
   width: 100%;
   position: absolute;
 }
+
+#experience > div {
+  justify-content: center;
+}
+
+.experience-box {
+  height: 30vh;
+  background-color: #dddddd;
+  border-style: solid;
+  border-radius: 10px;
+  overflow: auto;
+}
+
 #contact div{
   z-index: 13;
 }
