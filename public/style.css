@@ -1,5 +1,4 @@
 body {
-  /* font-family: "Crimson Text", serif; */
   font-family: "Poiret One", serif;
   text-shadow: -0.25px 0 #555555, 0 0.25px #555555, 0.25px 0 #555555,
     0 -0.25px #555555;
@@ -123,12 +122,12 @@ span {
 }
 
 .gears-left {
-  margin-left: -160px;
-  margin-top: -40px;
+  margin-left: -10em;
+  margin-top: -2.5em;
 }
 .gears-right {
-  margin-right: 215px;
-  margin-top: -40px;
+  margin-right: 13.5em;
+  margin-top: -2.5em;
 }
 
 .gears img {
@@ -139,43 +138,56 @@ span {
 }
 
 .gear-left.counterclockwise {
-  margin-left: 55px;
+  margin-left: 3.5em;
 }
 .gear-right.counterclockwise {
-  margin-left: 55px;
+  margin-left: 3.5em;
 }
 
 .gear-2 {
-  margin-top: 80px;
+  margin-top: 5em;
 }
 .gear-3 {
-  margin-top: 160px;
+  margin-top: 10em;
 }
 .gear-4 {
-  margin-top: 240px;
+  margin-top: 15em;
 }
 .gear-5 {
-  margin-top: 320px;
+  margin-top: 20em;
 }
 .gear-6 {
-  margin-top: 400px;
+  margin-top: 25em;
 }
 .gear-7 {
-  margin-top: 480px;
+  margin-top: 30em;
 }
 .gear-8 {
-  margin-top: 560px;
+  margin-top: 35em;
 }
 .gear-9 {
-  margin-top: 640px;
+  margin-top: 40em;
+}
+.gear-10 {
+  margin-top: 45em;
+}
+.gear-11 {
+  margin-top: 50em;
+}
+.gear-12 {
+  margin-top: 55em;
+}
+.gear-13 {
+  margin-top: 60em;
+}
+.gear-14 {
+  margin-top: 65em;
 }
 
 #gear-toggle {
   position: fixed;
-  margin-bottom: 20px;
-  margin-right: 20px;
-  bottom: 0;
-  right: 0;
+  bottom: 2em;
+  right: 2em;
   padding: 0.5em;
   width: 30vw;
   border-style: solid;
@@ -218,6 +230,12 @@ span {
     visibility: hidden;
   }
   #gear-toggle {
+    display: none;
+  }
+}
+
+@media screen and (min-height: 890px){
+  .gear-12, .gear-13, .gear-14 {
     display: none;
   }
 }
