@@ -82,11 +82,11 @@ span {
 
 .navbar {
   padding: 0 3em;
-  width: 100%;
+  width: 100vw;
 }
 
 #navbarDropdown {
-  width: 100%;
+  width: 100vw;
 }
 
 .page {
@@ -153,6 +153,7 @@ span {
   height: 15em;
   z-index: 10;
   opacity: 0.75;
+  overflow: hidden;
 }
 
 .gear-left.counterclockwise {
@@ -235,6 +236,14 @@ span {
   to {opacity: 0.75;}
 }
 
+.project-image {
+  margin: 0 10em;
+}
+
+.stack, .embedly-card, .video-responsive {
+  margin: 1em;
+}
+
 @media screen and (max-width: 769px) {
   #headshot {
     content: url("/public/Rowe_Headshot.jpg");
@@ -249,6 +258,9 @@ span {
   }
   #gear-toggle {
     display: none;
+  }
+  .project-image {
+    margin: 1em;
   }
 }
 
