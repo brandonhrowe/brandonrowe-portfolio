@@ -12,6 +12,8 @@ const clockwiseGears = document.querySelectorAll(".clockwise");
 const counterClockwiseGears = document.querySelectorAll(".counterclockwise");
 const gearButton = document.querySelector("#gear-toggle");
 const allGears = document.querySelectorAll(".gears");
+const burger = document.querySelector("#burger")
+const dropdown = document.querySelector("#navbarDropdown")
 
 document.addEventListener("scroll", () => {
   if (window.getComputedStyle(allGears[0]).display === 'block') {
@@ -41,3 +43,20 @@ gearButton.addEventListener("click", () => {
 
   }
 });
+
+burger.addEventListener('click', ()=>{
+  if (burger.classList.contains('is-active')){
+    burger.classList.remove('is-active')
+    dropdown.classList.remove('is-active')
+  } else {
+    burger.classList.add('is-active')
+    dropdown.classList.add('is-active')
+  }
+})
+
+dropdown.addEventListener('click', ()=>{
+  if (dropdown.classList.contains('is-active')){
+    burger.classList.remove('is-active')
+    dropdown.classList.remove('is-active')
+  }
+})
