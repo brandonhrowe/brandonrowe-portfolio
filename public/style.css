@@ -244,6 +244,10 @@ span {
   margin: 1em;
 }
 
+#email {
+  color: white;
+}
+
 @media screen and (max-width: 769px) {
   #headshot {
     content: url("/public/Rowe_Headshot.jpg");
