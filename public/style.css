@@ -248,6 +248,10 @@ span {
   color: white;
 }
 
+.dropdown-menu {
+  width: 100%;
+}
+
 @media screen and (max-width: 769px) {
   #headshot {
     content: url("/public/Rowe_Headshot.jpg");
