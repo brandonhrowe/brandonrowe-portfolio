@@ -252,9 +252,19 @@ span {
   width: 100%;
 }
 
+#headshot-mobile {
+  display: none;
+}
+
 @media screen and (max-width: 769px) {
-  #headshot {
+  /* .headshot {
     content: url("/public/Rowe_Headshot.jpg");
+  } */
+  #headshot-mobile {
+    display: block;
+  }
+  #headshot-desktop {
+    display: none;
   }
   .embedly-card {
     height: 25em;
