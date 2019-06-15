@@ -257,9 +257,6 @@ span {
 }
 
 @media screen and (max-width: 769px) {
-  /* .headshot {
-    content: url("/public/Rowe_Headshot.jpg");
-  } */
   #headshot-mobile {
     display: block;
   }
