@@ -124,11 +124,11 @@ span {
 }
 
 .experience-box {
-  height: 30vh;
+  /* height: 30vh; */
   background-color: #dddddd;
   border-style: solid;
   border-radius: 10px;
-  overflow: auto;
+  /* overflow: initial; */
 }
 
 #contact div{
