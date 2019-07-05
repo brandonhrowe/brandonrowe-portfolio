@@ -141,6 +141,7 @@ span {
 
 .gears {
   display: none;
+  transform: translateZ(1);
 }
 
 .gears-left {
@@ -265,6 +266,7 @@ span {
   border-radius: 10px;
   border-style: solid;
   margin: 1em;
+  padding-top: 1em;
 }
 
 .media-left {
@@ -306,3 +308,4 @@ span {
     display: none;
   }
 }
+
