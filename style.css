@@ -260,6 +260,24 @@ span {
   display: none;
 }
 
+.medium-card {
+  background-image: linear-gradient(45deg, #c0c0c0, #919191);
+  border-radius: 10px;
+  border-style: solid;
+  margin: 1em;
+}
+
+.media-left {
+  background-color: white;
+  border-radius: 5px;
+  padding: 0.5em;
+}
+
+.card:hover {
+  border-color: #514fc4;
+  background-image: linear-gradient(45deg, #e7e7e7, #bbb7b7);
+}
+
 @media screen and (max-width: 769px) {
   #headshot-mobile {
     display: block;
