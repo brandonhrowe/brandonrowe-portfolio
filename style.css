@@ -1,7 +1,8 @@
 body {
-  font-family: "Poiret One", serif;
-  text-shadow: -0.25px 0 #555555, 0 0.25px #555555, 0.25px 0 #555555,
-    0 -0.25px #555555;
+  /* font-family: "Poiret One", serif; */
+  font-family: 'Quicksand', sans-serif;
+  /* text-shadow: -0.25px 0 #555555, 0 0.25px #555555, 0.25px 0 #555555,
+    0 -0.25px #555555; */
   background-attachment: fixed;
   margin: 0em;
   padding: 0em;
@@ -16,6 +17,7 @@ body {
   -webkit-animation: Gradient 10s ease infinite;
   -moz-animation: Gradient 10s ease infinite;
   animation: Gradient 10s ease infinite;
+  overflow: hidden;
 }
 
 @-webkit-keyframes Gradient {
@@ -89,6 +91,12 @@ span {
   width: 100vw;
 }
 
+.section-title {
+  background-color: white;
+  border-style: solid;
+  padding: 1em;
+}
+
 .page {
   margin: 0 3em;
 }
@@ -135,22 +143,23 @@ span {
   z-index: 13;
 }
 
-.contact-links a:hover {
+.contact-links.bottom a:hover {
   color: #ffffff;
 }
 
 .gears {
   display: none;
-  transform: translateZ(1);
 }
 
 .gears-left {
   margin-left: -10em;
   margin-top: -2.5em;
+  transform: translateZ(1);
 }
 .gears-right {
   margin-right: 13.5em;
   margin-top: -2.5em;
+  transform: translateZ(2);
 }
 
 .gears img {
@@ -300,6 +309,9 @@ span {
   }
   .project-image {
     margin: 1em;
+  }
+  .navbar{
+    padding: 0;
   }
 }
 
