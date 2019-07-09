@@ -8,15 +8,16 @@ body {
   padding: 0em;
   background: linear-gradient(
     -45deg,
-    #ec52237a,
-    #184cda8e,
-    #23a5d57e,
-    #21cf8781
+    #db23ec9a,
+    /* #a87914b0, */
+    #068cbda8,
+    #184cdab0,
+    #21cfc681
   );
-  background-size: 200% 200%;
-  -webkit-animation: Gradient 10s ease infinite;
-  -moz-animation: Gradient 10s ease infinite;
-  animation: Gradient 10s ease infinite;
+  background-size: 200% 100%;
+  -webkit-animation: Gradient 7s ease infinite;
+  -moz-animation: Gradient 7s ease infinite;
+  animation: Gradient 7s ease infinite;
   overflow: hidden;
 }
 
@@ -95,6 +96,16 @@ span {
   background-color: white;
   border-style: solid;
   padding: 1em;
+  background: linear-gradient(
+    -45deg,
+    #ffffff,
+    #dde5e6,
+    #ffffff
+  );
+  background-size: 200% 100%;
+  -webkit-animation: Gradient 7s ease infinite;
+  -moz-animation: Gradient 7s ease infinite;
+  animation: Gradient 7s ease infinite;
 }
 
 .page {
