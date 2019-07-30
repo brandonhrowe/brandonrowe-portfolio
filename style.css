@@ -67,6 +67,11 @@ body {
   text-shadow: none;
 }
 
+#big-splice-title {
+  font-family: "Molot", sans-serif;
+  text-shadow: none;
+}
+
 span {
   text-shadow: -0.1px 0 #ffffff, 0 0.1px #ffffff, 0.1px 0 #ffffff,
     0 -0.1px #ffffff;
