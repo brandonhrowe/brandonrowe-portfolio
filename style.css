@@ -148,11 +148,9 @@ span {
 }
 
 .experience-box {
-  /* height: 30vh; */
   background-color: #dddddd;
   border-style: solid;
   border-radius: 10px;
-  /* overflow: initial; */
 }
 
 #contact div{
@@ -161,6 +159,14 @@ span {
 
 .contact-links.bottom a:hover {
   color: #ffffff;
+}
+
+a.button {
+  transition: all 0.25s ease-out;
+}
+
+a.button:hover {
+  transform: scale(1.15);
 }
 
 .gears {
@@ -249,11 +255,13 @@ span {
   animation-duration: 1s;
   -webkit-animation-name: fade-in;
   -webkit-animation-duration: 1s;
+  transition: all 0.25s ease-in-out;
 }
 
 #gear-toggle:hover {
-  color: #060486;
+  color: #010049;
   opacity: 1;
+  transform: scale(1.05);
 }
 
 @keyframes fade-in {
@@ -278,6 +286,14 @@ span {
   color: white;
 }
 
+.dropdown:hover {
+  background-color: #c6c6c7;
+}
+
+.dropdown.is-active:hover {
+  background-color: #3273dc;
+}
+
 .dropdown-menu {
   width: 100%;
 }
@@ -292,6 +308,7 @@ span {
   border-style: solid;
   margin: 1em;
   padding-top: 1em;
+  transition: all 0.25s ease-out;
 }
 
 .media-left {
@@ -303,6 +320,7 @@ span {
 .card:hover {
   border-color: #514fc4;
   background-image: linear-gradient(45deg, #e7e7e7, #bbb7b7);
+  transform: scale(1.05);
 }
 
 @media screen and (max-width: 769px) {
