@@ -36,15 +36,17 @@ class Gallery extends Component {
             <img src={obj.thumbnail} />
           </a>
 
-          <h3>
-            {obj.caption} |{' '}
-            <a href={obj.link} className="icon fa-globe">
-              <span className="label">Link</span>
-            </a>{' '}
-            <a href={obj.github} className="icon fa-github">
-              <span className="label">Github</span>
-            </a>{' '}
-          </h3>
+          <div className="thumb-header">
+            <h2>{obj.caption}</h2>
+            <div>
+              <a href={obj.link} className="button">
+                Link <span className="icon fa-globe"></span>
+              </a>
+              <a href={obj.github} className="button">
+                GitHub <span className="icon fa-github"></span>
+              </a>
+            </div>
+          </div>
           <p>{obj.description}</p>
         </article>
       )
