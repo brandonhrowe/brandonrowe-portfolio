@@ -14,6 +14,11 @@ import full01 from '../assets/images/fulls/Bloom_Full.png'
 import full02 from '../assets/images/fulls/Simmer_Full.png'
 import full03 from '../assets/images/fulls/BigSplice_Full.png'
 
+import fsa from '../assets/images/experience/fsa-logo-stacked.png'
+import pft from '../assets/images/experience/pft_logo.jpg'
+import deluxe from '../assets/images/experience/deluxe-entertainment.jpg'
+import nyu from '../assets/images/experience/nyu_logo.png'
+
 import resume from '../assets/downloads/Brandon_H_Rowe_Tech_Resume_2019.pdf'
 
 const DEFAULT_IMAGES = [
@@ -67,7 +72,6 @@ const DEFAULT_IMAGES = [
       'Sequelize',
       'Service Workers',
       'Cheerio',
-      'Request-Promise',
       'Bulma',
     ],
     supplement: {
@@ -109,6 +113,7 @@ const work = [
   {
     company: 'Fullstack Academy of Code',
     title: 'Software Engineer Teaching Fellow',
+    logo: fsa,
     details: [
       'Mentor ~40 software engineering students on Node.js, React and other modern JavaScript projects',
       'Lead algorithm reviews',
@@ -119,6 +124,7 @@ const work = [
   {
     company: 'Prime Focus Technologies',
     title: 'Post Production Technician',
+    logo: pft,
     details: [
       'Coded scripts to automate workflows using Bash and FFmpeg, speeding up processes by 500%',
       'Managed and updated daily workflows for tech department with advanced software, increasing encoding capacity from 5 to 40 a day',
@@ -128,6 +134,7 @@ const work = [
   {
     company: 'Deluxe Digital Services',
     title: 'Ingest Operator',
+    logo: deluxe,
     details: [
       'Guided the archiving of thousands of video and audio assets into remote storage system',
       'Encoded and edited content for Netflix, HBO, and other clients',
@@ -138,6 +145,7 @@ const work = [
 const education = [
   {
     company: 'Fullstack Academy of Code',
+    logo: fsa,
     details: [
       'Software Engineering Immersive Program',
       'JavaScript Fullstack, including Node.js, Express, PostgreSQL, React, and Redux',
@@ -146,6 +154,7 @@ const education = [
   {
     company: 'New York University',
     title: 'Tisch School of the Arts',
+    logo: nyu,
     details: [
       'Bachelor of Fine Arts',
       'Major: Film and Television Production',
@@ -250,15 +259,17 @@ class HomeIndex extends React.Component {
             </a>
             <div className="experience-columns">
               <div>
-                <h3>
+                <h2>
                   <u>Work</u>
-                </h3>
+                </h2>
+                <br />
                 <Experience experience={work} />
               </div>
               <div>
-                <h3>
+                <h2>
                   <u>Education</u>
-                </h3>
+                </h2>
+                <br />
                 <Experience experience={education} />
               </div>
             </div>
