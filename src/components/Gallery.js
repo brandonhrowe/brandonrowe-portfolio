@@ -38,13 +38,19 @@ class Gallery extends Component {
           </a>
 
           <div className="thumb-header">
-            <h2>{obj.caption}</h2>
+            <a href={obj.link}>
+              <h2>{obj.caption}</h2>
+            </a>
             <div>
               <a href={obj.link} className="button">
                 Link <span className="icon fa-globe"></span>
               </a>
               <a href={obj.github} className="button">
                 GitHub <span className="icon fa-github"></span>
+              </a>
+              <a href={obj.supplement.link} className="button">
+                {obj.supplement.name}{' '}
+                <span className={`icon fa-${obj.supplement.site}`}></span>
               </a>
             </div>
           </div>

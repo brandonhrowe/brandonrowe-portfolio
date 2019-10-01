@@ -43,6 +43,12 @@ const DEFAULT_IMAGES = [
       'WordsAPI',
       'CKEditor',
     ],
+    supplement: {
+      site: 'medium',
+      link:
+        'https://medium.com/@brandon.h.rowe/in-search-of-lost-words-8a431227da67?source=friends_link&sk=a63a2cfe1c3ff9cf6d462754d452ab52',
+      name: 'Article',
+    },
   },
   {
     id: '2',
@@ -67,6 +73,11 @@ const DEFAULT_IMAGES = [
       'Request-Promise',
       'Bulma',
     ],
+    supplement: {
+        site: 'youtube',
+        link: 'https://www.youtube.com/embed/N-c-Lw-gp-o',
+        name: 'Presentation'
+    }
   },
   {
     id: '3',
@@ -88,6 +99,11 @@ const DEFAULT_IMAGES = [
       'Internet Archive API',
       'React Sortable HOC',
     ],
+    supplement: {
+        site: 'medium',
+        link: 'https://medium.com/@brandon.h.rowe/splicing-concepts-together-faedc90170a9?source=friends_link&sk=12dc945a03cf4a027c9c7dd0c4a274ec',
+        name: 'Article'
+    }
   },
 ]
 
@@ -149,7 +165,8 @@ class HomeIndex extends React.Component {
                   github,
                   link,
                   long_desc,
-                  stack
+                  stack,
+                  supplement
                 }) => ({
                   source,
                   thumbnail,
@@ -158,7 +175,8 @@ class HomeIndex extends React.Component {
                   github,
                   link,
                   long_desc,
-                  stack
+                  stack,
+                  supplement
                 })
               )}
             />
