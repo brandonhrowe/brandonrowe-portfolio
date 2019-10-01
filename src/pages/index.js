@@ -31,6 +31,18 @@ const DEFAULT_IMAGES = [
     github: 'https://github.com/brandonhrowe/bloom-writing',
     long_desc:
       'BLOOM WRITING is a creative writing app that generates a random prompt with which to start writing. The app also includes features such as suggested next sentences, definition lookups, and downloading stories.',
+    stack: [
+      'Node',
+      'Express',
+      'React',
+      'Redux',
+      'Postgres',
+      'Sequelize',
+      'Compromise',
+      'Sentencer',
+      'WordsAPI',
+      'CKEditor',
+    ],
   },
   {
     id: '2',
@@ -43,6 +55,18 @@ const DEFAULT_IMAGES = [
     github: 'https://github.com/1902cs-indigo-oscar/Simmer',
     long_desc:
       'Simmer is a Progressive Web App that allows users to bookmark recipes from different cooking sites through a Chrome extension. Users can also find more recipes with the Search and Recommendations features, and can access their recipes even when offline.',
+    stack: [
+      'Node',
+      'Express',
+      'React',
+      'Redux',
+      'Postgres',
+      'Sequelize',
+      'Service Workers',
+      'Cheerio',
+      'Request-Promise',
+      'Bulma',
+    ],
   },
   {
     id: '3',
@@ -53,7 +77,17 @@ const DEFAULT_IMAGES = [
       'Create old-fashioned, film-noir collages by assembling clips selected from the Internet Archive.',
     link: 'https://www.thebigsplice.com',
     github: 'https://github.com/brandonhrowe/the-big-splice',
-    long_desc: 'THE BIG SPLICE is an app that lets users edit together their own, old-fashioned film-noir. Utilizing the Internet Archive\'s collection of classic films, the user is presented with a handful of clips, which they can splice together in any order to produce a final movie for their viewing pleasure.'
+    long_desc:
+      "THE BIG SPLICE is an app that lets users edit together their own, old-fashioned film-noir. Utilizing the Internet Archive's collection of classic films, the user is presented with a handful of clips, which they can splice together in any order to produce a final movie for their viewing pleasure.",
+    stack: [
+      'Python',
+      'Django',
+      'React',
+      'Postgres',
+      'FFmpeg',
+      'Internet Archive API',
+      'React Sortable HOC',
+    ],
   },
 ]
 
@@ -114,7 +148,8 @@ class HomeIndex extends React.Component {
                   description,
                   github,
                   link,
-                  long_desc
+                  long_desc,
+                  stack
                 }) => ({
                   source,
                   thumbnail,
@@ -122,7 +157,8 @@ class HomeIndex extends React.Component {
                   description,
                   github,
                   link,
-                  long_desc
+                  long_desc,
+                  stack
                 })
               )}
             />
