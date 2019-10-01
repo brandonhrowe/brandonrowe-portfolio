@@ -238,25 +238,17 @@ class HomeIndex extends React.Component {
                 })
               )}
             />
-
-            {/* <ul className="actions">
-              <li>
-                <a href="#" className="button">
-                  Full Portfolio
-                </a>
-              </li>
-            </ul> */}
           </section>
 
           <section id="three">
             <header className="major">
               <h2>
                 <u>Experience</u>
+                <a href={resume} className="button resume">
+                  Download Resume
+                </a>
               </h2>
             </header>
-            <a href={resume} className="button resume">
-              Download Resume
-            </a>
             <div className="experience-columns">
               <div>
                 <h2>
@@ -272,6 +264,39 @@ class HomeIndex extends React.Component {
                 <br />
                 <Experience experience={education} />
               </div>
+            </div>
+          </section>
+
+          <section id="four">
+            <header className="major">
+              <h2>
+                <u>Contact Info...</u>
+              </h2>
+            </header>
+            <div>
+              <h3>
+                Feel free to reach out to me or see my work by way of{' '}
+                <a href="https://www.linkedin.com/in/brandonhrowe/">
+                  <u>LinkedIn</u>
+                </a>
+                ,{' '}
+                <a href="https://github.com/brandonhrowe">
+                  <u>GitHub</u>
+                </a>
+                ,{' '}
+                <a href="https://medium.com/@brandon.h.rowe">
+                  <u>Medium</u>
+                </a>
+                , or{' '}
+                <a href="mailto:brandonhrowe@gmail.com?subject=Greetings!">
+                  <u>email</u>
+                </a>{' '}
+                (or you can take a peek at my{' '}
+                <a href={resume}>
+                  <u>resume</u>
+                </a>
+                ). I look forward to hearing from you!
+              </h3>
             </div>
           </section>
         </div>
