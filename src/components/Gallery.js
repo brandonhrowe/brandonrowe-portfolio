@@ -39,7 +39,7 @@ class Gallery extends Component {
 
           <div className="thumb-header">
             <a href={obj.link}>
-              <h2>{obj.caption}</h2>
+              <h2 id={`${obj.font}-title`}>{obj.caption}</h2>
             </a>
             <div>
               <a href={obj.link} className="button">

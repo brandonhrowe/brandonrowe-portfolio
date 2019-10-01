@@ -156,6 +156,18 @@ h6 {
   line-height: 1.5em;
 }
 
+#simmer-title {
+  font-family: "Aclonica", sans-serif;
+}
+
+#bloom-title {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+#big-splice-title {
+  font-family: "Molot", sans-serif;
+}
+
 sub {
   font-size: 0.8em;
   position: relative;
@@ -806,7 +818,7 @@ dl {
 	justify-content: space-around;
 
 	.logo {
-		width: 100px;
+		width: 75px;
 		height: auto;
 		border: 1px solid #333;
 	}

@@ -27,6 +27,7 @@ const DEFAULT_IMAGES = [
     source: full01,
     thumbnail: thumb01,
     caption: 'Bloom Writing',
+    font: 'bloom',
     description:
       'Write stories with the help of randomly-generated prompts and sentence suggestions.',
     link: 'https://bloom-writing.herokuapp.com',
@@ -57,6 +58,7 @@ const DEFAULT_IMAGES = [
     source: full02,
     thumbnail: thumb02,
     caption: 'Simmer',
+    font: 'simmer',
     description:
       'Bookmark recipes from various cooking sites through the Simmer Chrome extension for on- and off-line access.',
     link: 'https://simmer.brook.li',
@@ -85,6 +87,7 @@ const DEFAULT_IMAGES = [
     source: full03,
     thumbnail: thumb03,
     caption: 'The Big Splice',
+    font: 'big-splice',
     description:
       'Create old-fashioned, film-noir collages by assembling clips selected from the Internet Archive.',
     link: 'https://www.thebigsplice.com',
@@ -225,6 +228,7 @@ class HomeIndex extends React.Component {
                   long_desc,
                   stack,
                   supplement,
+                  font
                 }) => ({
                   source,
                   thumbnail,
@@ -235,6 +239,7 @@ class HomeIndex extends React.Component {
                   long_desc,
                   stack,
                   supplement,
+                  font
                 })
               )}
             />
