@@ -4,20 +4,17 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 // import Lightbox from 'react-images'
 import Gallery from '../components/Gallery'
+import Experience from '../components/Experience'
 
 import thumb01 from '../assets/images/thumbs/Bloom_Thumb.png'
 import thumb02 from '../assets/images/thumbs/Simmer_Thumb.png'
 import thumb03 from '../assets/images/thumbs/BigSplice_Thumb.png'
-import thumb04 from '../assets/images/thumbs/04.jpg'
-import thumb05 from '../assets/images/thumbs/05.jpg'
-import thumb06 from '../assets/images/thumbs/06.jpg'
 
 import full01 from '../assets/images/fulls/Bloom_Full.png'
 import full02 from '../assets/images/fulls/Simmer_Full.png'
 import full03 from '../assets/images/fulls/BigSplice_Full.png'
-import full04 from '../assets/images/fulls/04.jpg'
-import full05 from '../assets/images/fulls/05.jpg'
-import full06 from '../assets/images/fulls/06.jpg'
+
+import resume from '../assets/downloads/Brandon_H_Rowe_Tech_Resume_2019.pdf'
 
 const DEFAULT_IMAGES = [
   {
@@ -74,10 +71,10 @@ const DEFAULT_IMAGES = [
       'Bulma',
     ],
     supplement: {
-        site: 'youtube',
-        link: 'https://www.youtube.com/embed/N-c-Lw-gp-o',
-        name: 'Presentation'
-    }
+      site: 'youtube',
+      link: 'https://www.youtube.com/embed/N-c-Lw-gp-o',
+      name: 'Presentation',
+    },
   },
   {
     id: '3',
@@ -100,10 +97,62 @@ const DEFAULT_IMAGES = [
       'React Sortable HOC',
     ],
     supplement: {
-        site: 'medium',
-        link: 'https://medium.com/@brandon.h.rowe/splicing-concepts-together-faedc90170a9?source=friends_link&sk=12dc945a03cf4a027c9c7dd0c4a274ec',
-        name: 'Article'
-    }
+      site: 'medium',
+      link:
+        'https://medium.com/@brandon.h.rowe/splicing-concepts-together-faedc90170a9?source=friends_link&sk=12dc945a03cf4a027c9c7dd0c4a274ec',
+      name: 'Article',
+    },
+  },
+]
+
+const work = [
+  {
+    company: 'Fullstack Academy of Code',
+    title: 'Software Engineer Teaching Fellow',
+    details: [
+      'Mentor ~40 software engineering students on Node.js, React and other modern JavaScript projects',
+      'Lead algorithm reviews',
+      'Act as scrum master for senior-phase group projects',
+      'Interview student candidates and vet their technical abilities',
+    ],
+  },
+  {
+    company: 'Prime Focus Technologies',
+    title: 'Post Production Technician',
+    details: [
+      'Coded scripts to automate workflows using Bash and FFmpeg, speeding up processes by 500%',
+      'Managed and updated daily workflows for tech department with advanced software, increasing encoding capacity from 5 to 40 a day',
+      'Liaised with key stakeholders at HBO, IFC and A&E to manage their video encoding and editing work',
+    ],
+  },
+  {
+    company: 'Deluxe Digital Services',
+    title: 'Ingest Operator',
+    details: [
+      'Guided the archiving of thousands of video and audio assets into remote storage system',
+      'Encoded and edited content for Netflix, HBO, and other clients',
+    ],
+  },
+]
+
+const education = [
+  {
+    company: 'Fullstack Academy of Code',
+    details: [
+      'Software Engineering Immersive Program',
+      'JavaScript Fullstack, including Node.js, Express, PostgreSQL, React, and Redux',
+    ],
+  },
+  {
+    company: 'New York University',
+    title: 'Tisch School of the Arts',
+    details: [
+      'Bachelor of Fine Arts',
+      'Major: Film and Television Production',
+      'Minor: Metropolitan Studies',
+      'GPA: 3.83',
+      'Magna Cum Laude',
+    ],
   },
 ]
 
@@ -166,7 +215,7 @@ class HomeIndex extends React.Component {
                   link,
                   long_desc,
                   stack,
-                  supplement
+                  supplement,
                 }) => ({
                   source,
                   thumbnail,
@@ -176,7 +225,7 @@ class HomeIndex extends React.Component {
                   link,
                   long_desc,
                   stack,
-                  supplement
+                  supplement,
                 })
               )}
             />
@@ -191,73 +240,26 @@ class HomeIndex extends React.Component {
           </section>
 
           <section id="three">
-            <h2>Get In Touch</h2>
-            <p>
-              Accumsan pellentesque commodo blandit enim arcu non at amet id
-              arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi
-              lorem vulputate lorem neque lorem ipsum dolor.
-            </p>
-            <div className="row">
-              <div className="8u 12u$(small)">
-                <form method="post" action="#">
-                  <div className="row uniform 50%">
-                    <div className="6u 12u$(xsmall)">
-                      <input
-                        type="text"
-                        name="name"
-                        id="name"
-                        placeholder="Name"
-                      />
-                    </div>
-                    <div className="6u 12u$(xsmall)">
-                      <input
-                        type="email"
-                        name="email"
-                        id="email"
-                        placeholder="Email"
-                      />
-                    </div>
-                    <div className="12u">
-                      <textarea
-                        name="message"
-                        id="message"
-                        placeholder="Message"
-                        rows="4"
-                      ></textarea>
-                    </div>
-                  </div>
-                </form>
-                <ul className="actions">
-                  <li>
-                    <input type="submit" value="Send Message" />
-                  </li>
-                </ul>
+            <header className="major">
+              <h2>
+                <u>Experience</u>
+              </h2>
+            </header>
+            <a href={resume} className="button resume">
+              Download Resume
+            </a>
+            <div className="experience-columns">
+              <div>
+                <h3>
+                  <u>Work</u>
+                </h3>
+                <Experience experience={work} />
               </div>
-              <div className="4u 12u$(small)">
-                <ul className="labeled-icons">
-                  <li>
-                    <h3 className="icon fa-home">
-                      <span className="label">Address</span>
-                    </h3>
-                    1234 Somewhere Rd.
-                    <br />
-                    Nashville, TN 00000
-                    <br />
-                    United States
-                  </li>
-                  <li>
-                    <h3 className="icon fa-mobile">
-                      <span className="label">Phone</span>
-                    </h3>
-                    000-000-0000
-                  </li>
-                  <li>
-                    <h3 className="icon fa-envelope-o">
-                      <span className="label">Email</span>
-                    </h3>
-                    <a href="#">hello@untitled.tld</a>
-                  </li>
-                </ul>
+              <div>
+                <h3>
+                  <u>Education</u>
+                </h3>
+                <Experience experience={education} />
               </div>
             </div>
           </section>

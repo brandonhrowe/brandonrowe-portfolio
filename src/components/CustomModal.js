@@ -1,7 +1,7 @@
 import React from 'react'
 
-const CustomModal = ({ data, currentView, isModal }) => {
-  return isModal ? (
+const CustomModal = ({ data, currentView, isModal }) =>
+  isModal ? (
     <div className="modal">
       <img src={data.thumbnail} alt={data.caption} />
       <div className="modal-info">
@@ -17,7 +17,7 @@ const CustomModal = ({ data, currentView, isModal }) => {
             <span className={`icon fa-${data.supplement.site}`}></span>
           </a>
         </div>
-        <div>{data.long_desc}</div>
+        <div className="modal-desc">{data.long_desc}</div>
         <div>
           <u>STACK USED:</u>
           <ul className="stack-list">
@@ -28,6 +28,5 @@ const CustomModal = ({ data, currentView, isModal }) => {
       </div>
     </div>
   ) : null
-}
 
 export default CustomModal

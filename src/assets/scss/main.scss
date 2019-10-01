@@ -223,6 +223,10 @@ pre {
   text-align: right;
 }
 
+.resume {
+	font-size: 1.25em;
+}
+
 /* Section/Article */
 
 section,
@@ -793,6 +797,21 @@ ul {
 
 dl {
   margin: 0 0 _size(element-margin) 0;
+}
+
+/* Experience */
+
+.experience-columns {
+	display: flex;
+	justify-content: space-around;
+
+	&:first-child {
+		flex: 2;
+	}
+
+	&:last-child {
+		flex: 1;
+	}
 }
 
 /* Table */
@@ -1443,7 +1462,13 @@ body.is-touch {
     margin: 0;
     padding: ($size-header-pad * 1.5) $size-header-pad;
     width: 100%;
-  }
+	}
+
+	/* Modal */
+
+	.modal-desc {
+		max-height: 15vh;
+	}
 }
 
 /* Small */
@@ -1553,6 +1578,7 @@ body.is-touch {
 				border-right: 0;
       }
 		}
+
 		.modal-links {
 			flex-direction: row;
 			max-height: 7.5vh;
@@ -1561,6 +1587,12 @@ body.is-touch {
 				font-size: 75%;
 			}
 		}
+	}
+
+	/* Experience */
+
+	.experience-columns {
+		flex-direction: column;
 	}
 
 }
@@ -1634,7 +1666,13 @@ body.is-touch {
         padding-left: 0;
       }
     }
-  }
+	}
+
+	/* Modal */
+
+	.modal-desc {
+		max-height: 40vh;
+	}
 }
 
 @media screen and (max-width: 480px) {
