@@ -5,16 +5,16 @@ import Layout from '../components/layout'
 // import Lightbox from 'react-images'
 import Gallery from '../components/Gallery'
 
-import thumb01 from '../assets/images/thumbs/01.jpg'
-import thumb02 from '../assets/images/thumbs/02.jpg'
-import thumb03 from '../assets/images/thumbs/03.jpg'
+import thumb01 from '../assets/images/thumbs/Bloom_Thumb.png'
+import thumb02 from '../assets/images/thumbs/Simmer_Thumb.png'
+import thumb03 from '../assets/images/thumbs/BigSplice_Thumb.png'
 import thumb04 from '../assets/images/thumbs/04.jpg'
 import thumb05 from '../assets/images/thumbs/05.jpg'
 import thumb06 from '../assets/images/thumbs/06.jpg'
 
-import full01 from '../assets/images/fulls/01.jpg'
-import full02 from '../assets/images/fulls/02.jpg'
-import full03 from '../assets/images/fulls/03.jpg'
+import full01 from '../assets/images/fulls/Bloom_Full.png'
+import full02 from '../assets/images/fulls/Simmer_Full.png'
+import full03 from '../assets/images/fulls/BigSplice_Full.png'
 import full04 from '../assets/images/fulls/04.jpg'
 import full05 from '../assets/images/fulls/05.jpg'
 import full06 from '../assets/images/fulls/06.jpg'
@@ -88,7 +88,7 @@ class HomeIndex extends React.Component {
         <div id="main">
           <section id="one">
             <header className="major">
-              <h2>About Me</h2>
+              <h2><u>About Me</u></h2>
             </header>
             <p>
               I am a Fullstack Software Engineer, located in Brooklyn, NY. I
@@ -113,8 +113,9 @@ class HomeIndex extends React.Component {
           </section>
 
           <section id="two">
-            <h2>Projects</h2>
-
+            <header className="major">
+              <h2><u>Projects</u></h2>
+            </header>
             <Gallery
               images={DEFAULT_IMAGES.map(
                 ({
