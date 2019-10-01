@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 import Carousel, { Modal, ModalGateway } from 'react-images'
+import CustomModal from './CustomModal'
 
 class Gallery extends Component {
   constructor() {
@@ -64,7 +65,11 @@ class Gallery extends Component {
         <ModalGateway>
           {lightboxIsOpen && (
             <Modal onClose={this.toggleLightbox}>
-              <Carousel currentIndex={selectedIndex} views={images} />
+              <Carousel
+                currentIndex={selectedIndex}
+                views={images}
+                components={{ View: CustomModal }}
+              />
             </Modal>
           )}
         </ModalGateway>

@@ -29,6 +29,8 @@ const DEFAULT_IMAGES = [
       'Write stories with the help of randomly-generated prompts and sentence suggestions.',
     link: 'https://bloom-writing.herokuapp.com',
     github: 'https://github.com/brandonhrowe/bloom-writing',
+    long_desc:
+      'BLOOM WRITING is a creative writing app that generates a random prompt with which to start writing. The app also includes features such as suggested next sentences, definition lookups, and downloading stories.',
   },
   {
     id: '2',
@@ -39,6 +41,8 @@ const DEFAULT_IMAGES = [
       'Bookmark recipes from various cooking sites through the Simmer Chrome extension for on- and off-line access.',
     link: 'https://simmer.brook.li',
     github: 'https://github.com/1902cs-indigo-oscar/Simmer',
+    long_desc:
+      'Simmer is a Progressive Web App that allows users to bookmark recipes from different cooking sites through a Chrome extension. Users can also find more recipes with the Search and Recommendations features, and can access their recipes even when offline.',
   },
   {
     id: '3',
@@ -49,28 +53,8 @@ const DEFAULT_IMAGES = [
       'Create old-fashioned, film-noir collages by assembling clips selected from the Internet Archive.',
     link: 'https://www.thebigsplice.com',
     github: 'https://github.com/brandonhrowe/the-big-splice',
+    long_desc: 'THE BIG SPLICE is an app that lets users edit together their own, old-fashioned film-noir. Utilizing the Internet Archive\'s collection of classic films, the user is presented with a handful of clips, which they can splice together in any order to produce a final movie for their viewing pleasure.'
   },
-  //   {
-  //     id: '4',
-  //     source: full04,
-  //     thumbnail: thumb04,
-  //     caption: 'Photo 4',
-  //     description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
-  //   },
-  //   {
-  //     id: '5',
-  //     source: full05,
-  //     thumbnail: thumb05,
-  //     caption: 'Photo 5',
-  //     description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
-  //   },
-  //   {
-  //     id: '6',
-  //     source: full06,
-  //     thumbnail: thumb06,
-  //     caption: 'Photo 6',
-  //     description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
-  //   },
 ]
 
 class HomeIndex extends React.Component {
@@ -88,7 +72,9 @@ class HomeIndex extends React.Component {
         <div id="main">
           <section id="one">
             <header className="major">
-              <h2><u>About Me</u></h2>
+              <h2>
+                <u>About Me</u>
+              </h2>
             </header>
             <p>
               I am a Fullstack Software Engineer, located in Brooklyn, NY. I
@@ -114,7 +100,9 @@ class HomeIndex extends React.Component {
 
           <section id="two">
             <header className="major">
-              <h2><u>Projects</u></h2>
+              <h2>
+                <u>Projects</u>
+              </h2>
             </header>
             <Gallery
               images={DEFAULT_IMAGES.map(
@@ -126,6 +114,7 @@ class HomeIndex extends React.Component {
                   description,
                   github,
                   link,
+                  long_desc
                 }) => ({
                   source,
                   thumbnail,
@@ -133,6 +122,7 @@ class HomeIndex extends React.Component {
                   description,
                   github,
                   link,
+                  long_desc
                 })
               )}
             />
