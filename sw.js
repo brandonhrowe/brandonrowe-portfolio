@@ -27,27 +27,23 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-92484ff4b50b71db227e.js"
+    "url": "webpack-runtime-576d43d78b2480c72433.js"
   },
   {
-    "url": "commons.37fe3d7a666d263a14db.css"
+    "url": "commons.30908219a903ffaa3c83.css"
   },
   {
     "url": "commons-b8bedba6bf25a3f695b7.js"
   },
   {
-    "url": "app-3fe365294e0a37b2d1f0.js"
+    "url": "app-6b58f556a9a15680658b.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-dd79a589e4a1042b9150.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "6eb8fbdb753de3a5638ed0cacfc75e7e"
-  },
-  {
-    "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
-    "revision": "3368cb8327d07db78f1d7f8f2416ff57"
+    "revision": "a59744d601062c307ee0b26e1d0d2973"
   },
   {
     "url": "manifest.webmanifest",
@@ -74,12 +70,12 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   }
 
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^/brandonrowe-portfolio`), ``)
+  pathname = pathname.replace(new RegExp(`^`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/brandonrowe-portfolio/app-3fe365294e0a37b2d1f0.js`))) {
+  if (!resources || !(await caches.match(`/app-6b58f556a9a15680658b.js`))) {
     return await fetch(event.request)
   }
 
@@ -92,7 +88,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/brandonrowe-portfolio/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/offline-plugin-app-shell-fallback/index.html`
   const offlineShellWithKey = workbox.precaching.getCacheKeyForURL(offlineShell)
   return await caches.match(offlineShellWithKey)
 })
