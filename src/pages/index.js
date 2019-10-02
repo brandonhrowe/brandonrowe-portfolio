@@ -2,7 +2,6 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 import Layout from '../components/layout'
-// import Lightbox from 'react-images'
 import Gallery from '../components/Gallery'
 import Experience from '../components/Experience'
 
@@ -10,9 +9,9 @@ import thumb01 from '../assets/images/thumbs/Bloom_Thumb.png'
 import thumb02 from '../assets/images/thumbs/Simmer_Thumb.png'
 import thumb03 from '../assets/images/thumbs/BigSplice_Thumb.png'
 
-import full01 from '../assets/images/fulls/Bloom_Full.png'
-import full02 from '../assets/images/fulls/Simmer_Full.png'
-import full03 from '../assets/images/fulls/BigSplice_Full.png'
+import full01 from '../assets/images/fulls/Bloom_Full.jpg'
+import full02 from '../assets/images/fulls/Simmer_Full.jpg'
+import full03 from '../assets/images/fulls/BigSplice_Full.jpg'
 
 import fsa from '../assets/images/experience/fsa-logo-stacked.png'
 import pft from '../assets/images/experience/pft_logo.jpg'
@@ -170,8 +169,8 @@ const education = [
 
 class HomeIndex extends React.Component {
   render() {
-    const siteTitle = 'Gatsby Starter - Strata'
-    const siteDescription = 'Site description'
+    const siteTitle = 'Brandon Rowe'
+    const siteDescription = 'Portfolio page for Brandon Rowe, software engineer'
 
     return (
       <Layout>
@@ -200,13 +199,6 @@ class HomeIndex extends React.Component {
               reading, and photography. I also teach workshops in analog film
               processing.
             </p>
-            {/* <ul className="actions">
-              <li>
-                <a href="#" className="button">
-                  Learn More
-                </a>
-              </li>
-            </ul> */}
           </section>
 
           <section id="two">
