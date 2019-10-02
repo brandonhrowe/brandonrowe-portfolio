@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: "/",
+  pathPrefix: "/brandonrowe-portfolio",
   siteMetadata: {
     title: "Brandon Rowe",
     author: "Brandon Rowe",
@@ -10,7 +10,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'brandon-rowe-portfolio',
+        name: 'brandonrowe-portfolio',
         short_name: 'brandonrowe',
         start_url: '/',
         background_color: '#663399',
